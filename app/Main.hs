@@ -22,12 +22,14 @@ saveDataTo board fp = do
             putStrLn $ "Content stored in " ++ fp ++ "!"
 
 allBoards :: [String]
-allBoards = ["a", "b", "c", "d", "e", "f", "g", "gif", "h", "hr", "k", "m", "o", "p", "r", "s", "t", "u", "v",
-             "vg", "vr", "w", "wg", "i", "ic", "r9k", "s4s", "cm", "hm", "lgbt", "y", "3", "adv", "an", "asp",
-             "biz", "cgl", "ck", "co", "diy", "fa", "fit", "gd", "hc", "int", "jp", "lit", "mlp", "mu", "n",
-             "out", "po", "pol", "sci", "soc", "sp", "tg", "toy", "trv", "tv", "vp", "wsg", "x"]
+allBoards = ["a"  , "b"  , "c"  , "d"   , "e"  , "f"  , "g" , "gif", "h"   , "hr" ,
+             "k"  , "m"  , "o"  , "p"   , "r"  , "s"  , "t" , "u"  , "v"   , "vg" , "vr" ,
+             "w"  , "wg" , "i"  , "ic"  , "r9k", "s4s", "cm", "hm" , "lgbt", "y"  , "3"  ,
+             "adv", "an" , "asp", "biz" , "cgl", "ck" , "co", "diy", "fa"  , "fit", "gd" ,
+             "hc" , "int", "jp" , "lit" , "mlp", "mu" , "n" , "out", "po"  , "pol", "sci",
+             "soc", "sp" , "tg" , "toy" , "trv", "tv" , "vp", "wsg", "x"]
 
-main :: IO()
+main :: IO ()
 main = do
     args <- getArgs
     hSetBuffering stdout NoBuffering
